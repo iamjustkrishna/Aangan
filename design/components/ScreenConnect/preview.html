@@ -1,0 +1,19 @@
+<!-- @dsCard group="Screens" height=780 width=400 subtitle="App screen mockup" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>preview</title></head>
+<body style="margin:0">
+<div id="root" class="fv-surface"></div>
+<script>
+var F = window.FamilyVault, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(F.PhoneFrame, null,
+  h('div', {className:'fv-phone-scroll', style:{paddingTop:'40px', gap:'24px'}},
+    h('span', {className:'fv-glyph', style:{width:'64px', height:'64px'}}, h(F.Icon, {name:'play', size:30})),
+    h('div', {className:'fv-col', style:{gap:'8px'}},
+      h('h1', {className:'headline', style:{margin:0}}, "Keep your family's videos in one place"),
+      h('p', {className:'body-lg', style:{margin:0, color:'var(--ink-muted)'}}, 'Record or upload once. Everyone in your family can watch.')),
+    h('div', {style:{flex:1}}),
+    h(F.DriveConnect, {state:'idle'}))));
+</script>
+</body>
+</html>

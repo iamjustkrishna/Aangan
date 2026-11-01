@@ -1,0 +1,41 @@
+# Gradle
+.gradle/
+build/
+**/build/
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+local.properties
+.externalNativeBuild/
+.cxx/
+captures/
+
+# Secrets & OAuth
+google-services.json
+GoogleService-Info.plist
+*.keystore
+*.jks
+client_secret*.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Kotlin Multiplatform
+.kotlin/
+
+# Build outputs
+*.apk
+*.aab
+*.ap_
+hs_err_pid*.log
+replay_pid*.log
+
+# Notes stay local (planning notes, session logs, agent handoff files).
+# The repo is public: these contain private planning details.
+*.md
+
+# Local tools
+.claude/
+.vscode/

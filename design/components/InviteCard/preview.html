@@ -1,0 +1,14 @@
+<!-- @dsCard group="People" height=330 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>preview</title></head>
+<body style="margin:0">
+<div id="root" class="fv-surface"></div>
+<script>
+var F = window.FamilyVault, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div', {className:'fv-grid'},
+  h(F.InviteCard, {from:'Rohan Sharma', family:'The Sharma Family', videos:214, members:[{name:'Kamla Sharma',tone:1},{name:'Rohan Sharma',tone:2},{name:'Priya Sharma',tone:3},{name:'Vikram Sharma',tone:4},{name:'Asha Verma',tone:5},{name:'Neel Sharma',tone:6}]}),
+  h(F.InviteCard, {direction:'outgoing', to:'Kamla Sharma', tone:1, contact:'+91 98200 41733', when:'yesterday'})));
+</script>
+</body>
+</html>

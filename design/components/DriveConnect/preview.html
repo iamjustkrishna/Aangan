@@ -1,0 +1,16 @@
+<!-- @dsCard group="Onboarding" height=420 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>preview</title></head>
+<body style="margin:0">
+<div id="root" class="fv-surface"></div>
+<script>
+var F = window.FamilyVault, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div', {className:'fv-grid'},
+  h(F.DriveConnect, {state:'idle'}),
+  h('div', {className:'fv-col'},
+    h(F.DriveConnect, {state:'connected', email:'priya.sharma@gmail.com', usedGB:6.2, totalGB:15}),
+    h(F.DriveConnect, {state:'connected', email:'kamla.sharma@gmail.com', usedGB:13.4, totalGB:15}))));
+</script>
+</body>
+</html>

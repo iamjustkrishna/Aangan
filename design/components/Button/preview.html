@@ -1,0 +1,21 @@
+<!-- @dsCard group="Actions" height=170 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>preview</title></head>
+<body style="margin:0">
+<div id="root" class="fv-surface"></div>
+<script>
+var F = window.FamilyVault, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div', {className:'fv-col'},
+  h('div', {className:'fv-row'},
+    h(F.Button, {variant:'primary'}, 'Join family'),
+    h(F.Button, {variant:'tonal', icon:'upload'}, 'Upload from gallery'),
+    h(F.Button, {variant:'outline'}, 'Change family')),
+  h('div', {className:'fv-row'},
+    h(F.Button, {variant:'quiet'}, 'Not now'),
+    h(F.Button, {variant:'danger'}, 'Remove from family'),
+    h(F.Button, {variant:'tonal', size:'md'}, 'Remind'),
+    h(F.Button, {variant:'primary', disabled:true}, 'Waiting for Google…'))));
+</script>
+</body>
+</html>

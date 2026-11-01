@@ -1,0 +1,18 @@
+<!-- @dsCard group="People" height=100 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>preview</title></head>
+<body style="margin:0">
+<div id="root" class="fv-surface"></div>
+<script>
+var F = window.FamilyVault, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div', {className:'fv-row'},
+  h(F.Avatar, {name:'Kamla Sharma', tone:1, size:'lg'}),
+  h(F.Avatar, {name:'Rohan Sharma', tone:2, size:'lg'}),
+  h(F.Avatar, {name:'Priya Sharma', tone:3, size:'md'}),
+  h(F.Avatar, {name:'Vikram Sharma', tone:4, size:'md'}),
+  h(F.Avatar, {name:'Asha Verma', tone:5, size:'sm'}),
+  h(F.Avatar, {name:'Neel', tone:6, size:'sm'})));
+</script>
+</body>
+</html>

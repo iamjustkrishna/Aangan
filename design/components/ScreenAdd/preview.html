@@ -1,0 +1,18 @@
+<!-- @dsCard group="Screens" height=780 width=400 subtitle="App screen mockup" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>preview</title></head>
+<body style="margin:0">
+<div id="root" class="fv-surface"></div>
+<script>
+var F = window.FamilyVault, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(F.PhoneFrame, null,
+  h(F.TopBar, {title:'The Sharma Family', search:true, me:{name:'Rohan Sharma', tone:2}}),
+  h('div', {className:'fv-phone-scroll'},
+    h(F.VideoCard, {bleed:true, title:"Dadi's 80th birthday, cutting the cake", uploader:'Priya', avatarName:'Priya Sharma', uploaderTone:3, when:'2 days ago', duration:'4:32', tone:2}),
+    h(F.VideoCard, {bleed:true, title:'Papa singing old Kishore Kumar songs', uploader:'Vikram', avatarName:'Vikram Sharma', uploaderTone:4, when:'12 Oct', duration:'6:03', tone:4})),
+  h('div', {className:'fv-phone-dim'}),
+  h('div', {className:'fv-phone-sheet'}, h(F.AddSheet, null))));
+</script>
+</body>
+</html>

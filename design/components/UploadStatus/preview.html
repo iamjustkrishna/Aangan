@@ -1,0 +1,19 @@
+<!-- @dsCard group="Uploads" height=120 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>preview</title></head>
+<body style="margin:0">
+<div id="root" class="fv-surface"></div>
+<script>
+var F = window.FamilyVault, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div', {className:'fv-col'},
+  h('div', {className:'fv-row'},
+    h(F.UploadStatus, {state:'queued'}),
+    h(F.UploadStatus, {state:'uploading', progress:42}),
+    h(F.UploadStatus, {state:'waiting'}),
+    h(F.UploadStatus, {state:'saved'}),
+    h(F.UploadStatus, {state:'failed'})),
+  h('div', {style:{maxWidth:'320px'}}, h(F.Progress, {value:42}))));
+</script>
+</body>
+</html>

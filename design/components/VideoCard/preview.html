@@ -1,0 +1,17 @@
+<!-- @dsCard group="Timeline" height=310 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>preview</title></head>
+<body style="margin:0">
+<div id="root" class="fv-surface"></div>
+<script>
+var F = window.FamilyVault, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div', {className:'fv-grid'},
+  h(F.VideoCard, {title:"Dadi's 80th birthday, cutting the cake", uploader:'Priya', avatarName:'Priya Sharma', uploaderTone:3, when:'2 days ago', duration:'4:32', tone:2}),
+  h(F.VideoCard, {title:"Aarav's first steps in the living room", uploader:'Rohan', avatarName:'Rohan Sharma', uploaderTone:2, when:'Uploading now', duration:'0:48', tone:1, status:'uploading', progress:64}),
+  h('div', {className:'fv-col'},
+    h(F.VideoCard, {layout:'compact', title:"Diwali rangoli at Nani's house", uploader:'Asha', when:'Waiting for internet', duration:'2:15', tone:3, status:'waiting'}),
+    h(F.VideoCard, {layout:'compact', title:'Papa singing old Kishore Kumar songs', uploader:'Vikram', when:'12 Oct', duration:'6:03', tone:4}))));
+</script>
+</body>
+</html>

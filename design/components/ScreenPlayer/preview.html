@@ -1,0 +1,25 @@
+<!-- @dsCard group="Screens" height=780 width=400 subtitle="App screen mockup" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>preview</title></head>
+<body style="margin:0">
+<div id="root" class="fv-surface"></div>
+<script>
+var F = window.FamilyVault, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(F.PhoneFrame, null,
+  h('div', {style:{position:'relative', aspectRatio:'16 / 9', background:'var(--thumb-2)', display:'grid', placeItems:'center'}},
+    h('span', {style:{display:'grid', placeItems:'center', width:'56px', height:'56px', borderRadius:'50%', background:'var(--scrim)', color:'var(--on-scrim)', paddingLeft:'3px', boxSizing:'border-box'}}, h(F.Icon, {name:'play', size:28})),
+    h('div', {style:{position:'absolute', left:0, right:0, bottom:0}}, h(F.Progress, {value:35}))),
+  h('div', {className:'fv-phone-scroll', style:{paddingTop:'12px', gap:'16px'}},
+    h('div', {className:'fv-col', style:{gap:'4px'}},
+      h('h1', {className:'title', style:{margin:0}}, "Dadi's 80th birthday, cutting the cake"),
+      h('p', {className:'fv-card-sub'}, '2 days ago · 4:32')),
+    h('div', {className:'fv-line'},
+      h(F.Avatar, {name:'Priya Sharma', tone:3, size:'md'}),
+      h('div', {className:'fv-grow'}, h('p', {className:'fv-member-name'}, 'Priya'), h('p', {className:'fv-member-rel'}, 'Added this video'))),
+    h('p', {className:'fv-section-label'}, 'Up next'),
+    h(F.VideoCard, {layout:'compact', title:'Papa singing old Kishore Kumar songs', uploader:'Vikram', when:'12 Oct', duration:'6:03', tone:4}),
+    h(F.VideoCard, {layout:'compact', title:"Diwali rangoli at Nani's house", uploader:'Asha', when:'3 Nov 2025', duration:'2:15', tone:3}))));
+</script>
+</body>
+</html>

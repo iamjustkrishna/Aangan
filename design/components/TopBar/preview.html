@@ -1,0 +1,14 @@
+<!-- @dsCard group="Navigation" height=150 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>preview</title></head>
+<body style="margin:0">
+<div id="root" class=""></div>
+<script>
+var F = window.FamilyVault, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div', {className:'fv-col', style:{maxWidth:'380px'}},
+  h(F.TopBar, {title:'The Sharma Family', search:true, me:{name:'Rohan Sharma', tone:2}}),
+  h(F.TopBar, {title:'Family', subtitle:'6 people', back:true})));
+</script>
+</body>
+</html>

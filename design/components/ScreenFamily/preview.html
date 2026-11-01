@@ -1,0 +1,25 @@
+<!-- @dsCard group="Screens" height=780 width=400 subtitle="App screen mockup" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>preview</title></head>
+<body style="margin:0">
+<div id="root" class="fv-surface"></div>
+<script>
+var F = window.FamilyVault, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h(F.PhoneFrame, null,
+  h(F.TopBar, {title:'Family', subtitle:'The Sharma Family · 6 people', me:{name:'Rohan Sharma', tone:2}}),
+  h('div', {className:'fv-phone-scroll', style:{gap:'16px'}},
+    h(F.Button, {variant:'primary', icon:'plus', full:true}, 'Invite someone'),
+    h('div', null,
+      h('p', {className:'fv-section-label', style:{marginBottom:'4px'}}, 'Not joined yet'),
+      h(F.InviteCard, {direction:'outgoing', to:'Kamla Sharma', tone:1, contact:'+91 98200 41733', when:'yesterday'})),
+    h('div', null,
+      h('p', {className:'fv-section-label', style:{marginBottom:'4px'}}, 'Members'),
+      h(F.MemberRow, {name:'Rohan Sharma', relation:'Son', tone:2, role:'admin', you:true}),
+      h(F.MemberRow, {name:'Priya Sharma', relation:'Daughter-in-law', tone:3}),
+      h(F.MemberRow, {name:'Vikram Sharma', relation:'Papa', tone:4}),
+      h(F.MemberRow, {name:'Asha Verma', relation:'Bua', tone:5}))),
+  h(F.BottomNav, {active:'members'})));
+</script>
+</body>
+</html>

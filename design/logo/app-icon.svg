@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="512" height="512">
+  <!-- App icon: house with a play button ("home videos") on primary blue. -->
+  <rect width="108" height="108" rx="24" fill="#2457D6"/>
+  <path d="M51.4,31.1 Q54,29 56.6,31.1 L78.6,49.2 Q80,50.4 80,52.3 L80,74 Q80,79 75,79 L33,79 Q28,79 28,74 L28,52.3 Q28,50.4 29.4,49.2 Z" fill="#FFFFFF"/>
+  <path d="M49.5,54 L49.5,70 L63.5,62 Z" fill="#2457D6" stroke="#2457D6" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>

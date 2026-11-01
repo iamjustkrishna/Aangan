@@ -1,0 +1,14 @@
+<!-- @dsCard group="Capture" height=190 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>preview</title></head>
+<body style="margin:0">
+<div id="root" class="fv-surface"></div>
+<script>
+var F = window.FamilyVault, h = React.createElement;
+ReactDOM.createRoot(document.getElementById('root')).render(h('div', {className:'fv-camera-demo'},
+  h(F.RecordButton, {recording:false}),
+  h(F.RecordButton, {recording:true, seconds:83})));
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* Colours and type from design/tokens.json */
+:root {
+  --surface: #ffffff; --surface-sunken: #f1f3f5; --ink: #16191c; --ink-muted: #5c6670;
+  --line: #e4e7ea; --primary: #2457d6; --record: #e5322d;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --surface: #121416; --surface-sunken: #262a2e; --ink: #eceff1; --ink-muted: #a3adb6; --line: #2c3136; --primary: #8ab0ff; --record: #ff6b61; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--surface); color: var(--ink); font: 400 17px/1.6 "Figtree", Roboto, "Segoe UI", system-ui, sans-serif; }
+a { color: var(--primary); }
+.wrap { max-width: 720px; margin: 0 auto; padding: 32px max(16px, env(safe-area-inset-right)) 48px max(16px, env(safe-area-inset-left)); }
+.top, .home { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; }
+.mark { width: 32px; height: 32px; border-radius: 8px; }
+.name { font-weight: 700; font-size: 20px; }
+.hero { padding: 56px 0 32px; }
+h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.1; margin: 0 0 16px; text-wrap: balance; letter-spacing: -0.01em; }
+.lead { font-size: 19px; color: var(--ink-muted); max-width: 34em; margin: 0; }
+.status { display: inline-block; margin-top: 20px; padding: 4px 12px; border-radius: 999px; background: var(--surface-sunken); font-size: 14px; color: var(--ink-muted); }
+.points { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; padding: 24px 0 40px; border-top: 1px solid var(--line); }
+.points h2 { font-size: 17px; margin: 0 0 4px; }
+.points p { margin: 0; color: var(--ink-muted); font-size: 15px; }
+.foot { display: flex; flex-wrap: wrap; gap: 8px 24px; padding-top: 24px; border-top: 1px solid var(--line); font-size: 14px; color: var(--ink-muted); }
+.doc h1 { margin-top: 40px; }
+.doc h2 { font-size: 20px; margin: 32px 0 8px; }
+.doc .meta { color: var(--ink-muted); font-size: 14px; margin-top: 0; }
+.doc li { margin-bottom: 6px; }

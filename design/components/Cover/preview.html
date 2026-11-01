@@ -1,0 +1,62 @@
+<!-- @dsCard height=300 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>FamilyVault</title>
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--surface); color: var(--ink); overflow: hidden; }
+  .cover { position: relative; width: 960px; height: 300px; }
+  .art { position: absolute; left: 480px; top: 0; width: 480px; height: 300px; }
+  .name { position: absolute; left: 48px; bottom: 48px; width: 440px; }
+  .name h1 { margin: 0; font: 700 64px/0.95 var(--font-sans); letter-spacing: -0.03em; color: var(--ink); }
+  .name p { margin: 16px 0 0; font: 400 14px/20px var(--font-sans); color: var(--ink-muted); }
+  .primary { fill: var(--primary); }
+  .t1 { fill: var(--tone-1); }
+  .t2 { fill: var(--tone-2); }
+  .t3 { fill: var(--tone-3); }
+  .rec { fill: var(--record); }
+  .ring { fill: none; stroke: var(--ink); stroke-width: 4; }
+  .ground { fill: var(--surface); }
+  .done { fill: var(--primary); }
+  .todo { fill: var(--line-strong); }
+  .frame { rx: var(--radius-md); }
+</style>
+</head>
+<body>
+<div class="cover">
+  <svg class="art" viewBox="0 0 480 300" aria-hidden="true">
+    <!--
+      blocks: primary 256x144, tone-1 208x117 (bleeds right), tone-2 160x90, tone-3 176x99, record disc r32; frames are 16:9 like the video thumbnails.
+      arrangement: a staggered wall of video frames, top two bleeding off the top and right edges, the record disc as the satellite.
+      pattern: literal motif row: the upload queue as a strip of pills (7 primary = saved, 5 line-strong = waiting), because reliable uploads are the app's core promise.
+      scales: gaps space-4 (16), pill height space-3 (12), pill pitch space-6 (32), frame corners radius-md, pills radius-pill (half of 12).
+    -->
+    <rect class="primary frame" x="24" y="-28" width="256" height="144"/>
+    <path class="ground" d="M140 22 L178 44 L140 66 Z"/>
+    <rect class="t1 frame" x="296" y="20" width="208" height="117"/>
+    <rect class="t2 frame" x="24" y="132" width="160" height="90"/>
+    <rect class="t3 frame" x="200" y="132" width="176" height="99"/>
+    <circle class="ring" cx="428" cy="190" r="42"/>
+    <circle class="rec" cx="428" cy="190" r="32"/>
+    <rect class="done" x="24" y="256" width="24" height="12" rx="6"/>
+    <rect class="done" x="56" y="256" width="24" height="12" rx="6"/>
+    <rect class="done" x="88" y="256" width="24" height="12" rx="6"/>
+    <rect class="done" x="120" y="256" width="24" height="12" rx="6"/>
+    <rect class="done" x="152" y="256" width="24" height="12" rx="6"/>
+    <rect class="done" x="184" y="256" width="24" height="12" rx="6"/>
+    <rect class="done" x="216" y="256" width="24" height="12" rx="6"/>
+    <rect class="todo" x="248" y="256" width="24" height="12" rx="6"/>
+    <rect class="todo" x="280" y="256" width="24" height="12" rx="6"/>
+    <rect class="todo" x="312" y="256" width="24" height="12" rx="6"/>
+    <rect class="todo" x="344" y="256" width="24" height="12" rx="6"/>
+    <rect class="todo" x="376" y="256" width="24" height="12" rx="6"/>
+  </svg>
+  <div class="name">
+    <h1>FamilyVault</h1>
+    <p>Your family's videos, saved in your own Drive and watched together.</p>
+  </div>
+</div>
+</body>
+</html>
