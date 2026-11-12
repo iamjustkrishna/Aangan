@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" width="512" height="512">
+  <!-- App icon: courtyard arch with a play button ("home videos"). -->
+  <rect width="108" height="108" rx="24" fill="#273D62"/>
+  <path d="M32.5,76 L32.5,52 C32.5,42 41,36.5 54,32 C67,36.5 75.5,42 75.5,52 L75.5,76 L64,76 L64,56 A10,10 0 0 0 44,56 L44,76 Z" fill="#FFFFFF"/>
+  <path d="M50.5,56 L50.5,68 L60.5,62 Z" fill="#F8A148" stroke="#F8A148" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>
