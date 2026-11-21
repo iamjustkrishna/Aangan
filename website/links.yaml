@@ -1,0 +1,14 @@
+# Links used inside the Toli app. The app reads this file once a day when online,
+# keeps the last copy, and falls back to the links built into the app.
+# Change a link here and every phone picks it up within a day, without an app update.
+# Format: one "name: value" per line. Unknown names are ignored. Links must start with https://
+version: 1
+install: https://play.google.com/store/apps/details?id=app.kinema
+privacy: https://iamjustkrishna.github.io/Aangan/privacy.html
+child_safety: https://iamjustkrishna.github.io/Aangan/child-safety.html
+open_source: https://iamjustkrishna.github.io/Aangan/open-source.html
+delete_account: https://iamjustkrishna.github.io/Aangan/delete-account.html
+website: https://iamjustkrishna.github.io/Aangan/
+x: https://x.com/iamjustkrishna
+drive_storage: https://one.google.com/storage
+support_email: hlo.krsna@gmail.com
